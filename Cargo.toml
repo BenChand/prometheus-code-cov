@@ -1,0 +1,11 @@
+[package]
+name = "prometheus-code-cov"
+version = "0.1.0"
+authors = ["BenChand <BenChand1995@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+prometheus = { version = "0.9", features = ["gen"] } # Using 0.8 results in code coverage
+anyhow = "1.0"
+hyper = "0.13"
+tokio = { version = "0.2", features = ["full"] }
